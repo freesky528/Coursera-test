@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Media queries</title>
+	<style>
+/***** Base style *****/
+	*{
+		box-sizing:border-box;
+	}
+	h1{
+		margin-bottom:15px;
+		position:relative;
+		left:50%;
+	}
+
+	div{
+		border:1px solid black;
+		margin-right:15px;
+		margin-bottom:15px;
+	}
+
+	p{
+		margin-top:60px;
+		margin-right:4px;
+		font-size:110%;
+	}
+	.p1{
+		background-color:#A09A9C;
+		width:300px;
+		height:300px;
+		border-color:#000000;
+		border-radius: 1px;
+		position:relative;
+
+	}
+	.p2{
+		background-color:#A09A9C;
+		width: 300px;
+		height:300px;
+		border-color:#000000;
+		border-radius: 1px;
+	}
+
+	.p3{
+		background-color:#A09A9C;
+		width: 300px;
+		height:300px;
+		border-color:#000000;
+		border-radius: 1px;
+	}
+
+	.pg1{
+  		position:relative;
+	}
+
+	.pg2{
+ 		position:relative;
+	}
+
+	.pg3{
+  		position:relative;
+	}
+
+	.title1{
+  		background-color:#7DEAFA;
+  		position:absolute;
+  		top:0px;
+  		right:-15px;
+  		height:40px;
+  		width:150px;
+  		text-align:center;
+  		padding-top:4px;
+  		border:2px solid black;
+  		font-size:125%;
+  		font-weight:bold;
+	}
+
+	.title2{
+		background-color:#FF0000;
+		position:absolute;
+		top:0px;
+  		right:-15px;
+  		height:40px;
+  		width:150px;
+  		text-align:center;
+  		padding-top:4px;
+  		border:2px solid black;
+  		font-size:125%;
+  		font-weight:bold;
+	}
+
+	.title3{
+		background-color:#EBE300;
+		position:absolute;
+		top:0px;
+  		right:-15px;
+  		height:40px;
+  		width:150px;
+  		text-align:center;
+  		padding-top:4px;
+  		border:2px solid black;
+  		font-size:125%;
+  		font-weight:bold;
+	}
+
+
+
+
+/******* Large devices only *********/
+@media (min-width: 992px) {
+	.p1{
+		width:30%;
+		height:300px;
+		float:left;
+		margin-right:40px;
+	}
+	.p2{
+		width:30%;
+		height:300px;
+		float:left;
+		margin-right:40px;
+	}
+	.p3{
+		width:30%;
+		height:300px;
+		float:left;
+	}
+}
+
+/******* Medium devices only *********/
+@media (min-width: 768px) and (max-width: 991px) {
+	.p1{
+		width:40%;
+		height:300px;
+		float:left;
+		margin-right:20px;
+		margin:left:50px;
+	}
+	.p2{
+		width:40%;
+		height:300px;
+		float:left;
+		margin-right:20px;
+		margin:left:50px;
+	}
+	.p3{
+		width:82.5%;
+		height:300px;
+		clear:left;
+		margin:left:50px;
+	}
+}
+
+/******* Small devices only *********/
+@media (max-width: 767px) {
+	.p1{
+		width:90%;
+		height:300px;
+		clear:left;
+		margin-right:20px;
+		margin:left:50px;
+	}
+	.p2{
+		width:90%;
+		height:300px;
+		clear:left;
+		margin-right:20px;
+		margin:left:50px;
+	}
+	.p3{
+		width:90%;
+		height:300px;
+		clear:left;
+		margin:left:50px;
+	}
+}
+
+	</style>
+</head>
+<body>
+	<h1>Menu</h1>
+	<div class="p1 pg1">
+		<div class="title1">Chicken</div>
+		<p>lorem ipsum dolor sit amet, consecteur adipisicing elit, sed do eilumod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliiquip ex ea</p>
+	</div>
+	<div class="p2 pg2">
+		<div class="title2">Beef</div>
+		<p>lorem ipsum dolor sit amet, consecteur adipisicing elit, sed do eilumod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliiquip ex ea</p>
+	</div>
+	<div class="p3 pg3">
+		<div class="title3">Sushi</div>
+		<p>
+		lorem ipsum dolor sit amet, consecteur adipisicing elit, sed do eilumod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliiquip ex ea
+		</p>
+	</div>	
+</body>
+</html>
